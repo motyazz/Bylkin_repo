@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style/registration-style.css">
+</head>
+
+<body>	
+	<form class="reg" id="registr">
+		<h1 class="form_title">Регистрация</h1>
+
+		<div class="form_group">
+			<input class="form_input">
+			<label class="form_label">Имя</label>
+		</div>
+
+
+		<div class="form_group">
+			<input class="form_input">
+			<label class="form_label">Фамилия</label>
+		</div>
+
+
+		<div class="form_group">
+			<input class="form_input" id="numb" pattern="[0-9]+" title="Только цифры">
+			<label class="form_label">Телефон</label>
+		</div>
+
+		<div class="form_group">
+			<input class="form_input">
+			<label class="form_label">Email</label>
+		</div>
+
+		<div class="form_group">
+			<input class="form_input" type="password" >
+			<label class="form_label">Пароль</label>
+		</div>	
+
+		<button type="submit" class="form_button">Регистрация</button>
+		<br>
+		<br>	
+		
+		<div class="href"><a href="login.html">Уже есть аккаунт?</a></div>		
+	</form>
+
+	<script src="Js/reg_script.js"></script>
+	<!--<script src="Js/check_validation.js"></script>-->
+</body>
+
+</html>

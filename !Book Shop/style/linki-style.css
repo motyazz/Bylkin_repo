@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #fff;
+  background: #C850C0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  padding: 0 20px;
+}
+
+/* Social icons */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.social {
+  display: inline-flex;
+  position: fixed;
+  align-items: center;
+}
+
+.social a {
+  text-decoration: none;
+  color: #17181c;
+  transition: all 0.3s;
+}
+
+.social .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding:15px 15px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.social a:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .icon:hover a,
+.social .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.social .webstart:hover,
+.social .webstart:hover .tooltip,
+.social .webstart:hover .tooltip::before {
+  background-color: #E44D26;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .js:hover,
+.social .js:hover .tooltip,
+.social .js:hover .tooltip::before {
+  background-color: #F7C327;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .react:hover,
+.social .react:hover .tooltip,
+.social .react:hover .tooltip::before {
+  background-color: #61DAFB;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .php:hover,
+.social .php:hover .tooltip,
+.social .php:hover .tooltip::before {
+  background-color: #7377AD;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .wp:hover,
+.social .wp:hover .tooltip,
+.social .wp:hover .tooltip::before {
+  background-color: #207196;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .telegram:hover,
+.social .telegram:hover .tooltip,
+.social .telegram:hover .tooltip::before {
+  background-color: #32afed;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .vk:hover,
+.social .vk:hover .tooltip,
+.social .vk:hover .tooltip::before {
+  background-color: #5181b8;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .instagram:hover,
+.social .instagram:hover .tooltip,
+.social .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.social .youtube:hover,
+.social .youtube:hover .tooltip,
+.social .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.info{
+
+}

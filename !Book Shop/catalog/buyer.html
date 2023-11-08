@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="buyer_stylr.css">
+</head>
+
+<body>         
+
+  <form class="reg" id="registr" name="submit-to-google-sheet">
+    <h1 class="form_title">Подтверждение покупки</h1>
+
+    <div class="form_group">
+      <input class="form_input">
+      <label class="form_label">Ваше имя</label>
+    </div>
+
+
+    <div class="form_group" name="submit-to-google-sheet">
+      <input class="form_input" >
+      <label class="form_label">Ваша фамилия</label>
+    </div>
+
+
+    <div class="form_group" name="submit-to-google-sheet">
+      <input class="form_input" id="numb" pattern="[0-9]+" title="Только цифры">
+      <label class="form_label">Телефон</label>
+    </div>
+
+    <div class="form_group" name="submit-to-google-sheet">
+      <input class="form_input">
+      <label class="form_label">Название книги, котрую вы хотите приобрести</label>
+    </div>
+
+    
+    <button type="submit" class="form_button">Отправить заявку</button>
+    <br>
+    <br>
+    <div class="header">            
+              <li class="root"><a href="../index.html">На главную</a></li>
+            </ul>
+        </div>
+    
+    
+  </form>
+
+  <script src="Js/reg_script.js"></script>
+  <!--<script src="Js/check_validation.js"></script>-->
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwxOkyAvKwqfR0oAk3qYRbDFTtqTIlaxE2bp0rkF5LP3Rk_5U1cmUfeKA7eFPPnkG7F/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+
+</html>

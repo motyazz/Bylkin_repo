@@ -1,0 +1,88 @@
+body {
+    background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 150px;
+    background-image: linear-gradient(43deg, #f542f5 0%, #4260f5 46%, #b642f5 100%);
+    
+}
+
+.shop_name {
+    float: left;
+    width: 250px;
+    margin: 51px 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.menu {
+    list-style-type: none;
+    float: right;
+    margin-right: 15px;
+    padding: 0;
+    height: 30px;
+    color: #fff;
+
+
+}
+
+.root {
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    width: 112px;
+    
+}
+
+.root::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    content: "";
+}
+
+.root a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+
+.root a:hover {
+    color: #4842f5;
+    font-size: 24px;
+}
+
+.root:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+    left: -18px;
+    width: 180%;
+    list-style-type: none;
+    text-align: left;
+}
+
+.footer {
+    text-align: right;
+    height: 100px;
+    background: rgb(0, 42, 53);
+    padding: 15px 15px 0 0;
+    color: white;
+}
